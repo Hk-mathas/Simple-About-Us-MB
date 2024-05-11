@@ -1,0 +1,628 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("banner-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 26px;
+  text-decoration: none;
+  position: relative;
+}
+
+.heading h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 5px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.heading h1:hover::after {
+  width: 0;
+  background-color: transparent;
+  transform: scale(0.1);
+}
+
+.about-us-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 65px auto;
+}
+
+.left-side {
+  flex: 1;
+  width: 550px;
+  margin: 0 60px;
+  animation: fadeInUp 1.5s ease;
+}
+
+.left-side h3 {
+  font-size: 2.1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.left-side p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  padding-right: 39px;
+  color: #666;
+}
+
+.contact-us-btn {
+  display: inline-block;
+  background-color: #0c53f9;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 12px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-us-btn:hover {
+  transform: scale(1.09);
+}
+
+.right-side {
+  flex: 1;
+  width: 550px;
+  margin: auto;
+  animation: fadeInRight 1.5s ease;
+}
+
+.right-side img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.section-divider {
+  width: 100%;
+  border: none;
+  border-top: 5px solid lightgray;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+
+/* Our Vision Section  */
+
+.our-vision-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 65px auto;
+}
+
+.vision-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-top: 26px;
+  text-decoration: none;
+  position: relative;
+}
+
+.vision-heading h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 5px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.vision-heading h1:hover::after {
+  width: 0%;
+  background-color: transparent;
+  transform: scale(0.1);
+}
+
+.leftside {
+  flex: 1;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  animation: fadeInRight 1.5s ease;
+}
+
+.leftside img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.rightside {
+  flex: 1;
+  width: 550px;
+  margin-left: 150px;
+  animation: fadeInUp 1.5s ease;
+}
+
+.rightside h3 {
+  font-size: 2.1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.rightside p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  padding-right: 39px;
+  color: #666;
+}
+
+.section-divider-1 {
+  width: 100%;
+  border: none;
+  border-top: 5px solid lightgray;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* Services We Provide Section  */
+
+.services-container {
+  width: 100%;
+  height: 80vh;
+  padding: 0 8%;
+  animation: fadeInUp 1s ease;
+}
+
+.services-container h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 3rem;
+  margin-top: 26px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.services-container h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 5px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.services-container h1:hover::after {
+  width: 0%;
+  background-color: transparent;
+  transform: scale(0.1);
+}
+
+.services-container .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.service {
+  text-align: center;
+  padding: 35px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: tranform 0.5s, background 0.5s;
+}
+
+.service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #0c53f9;
+}
+
+.service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service:hover {
+  background: #0c53f9;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.service:hover i {
+  color: #fff;
+  transform: scale(1.09);
+}
+
+
+.section-divider-2 {
+    width: 100%;
+    border: none;
+    border-top: 5px solid lightgray;
+    position: fixed;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+
+/* Animation Keyframes  */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+/* Responsive Design  */
+
+@media only screen and (max-width: 1200px){
+
+  /* For About Us Section  */
+  .heading h1::after{
+    width: 130px;
+  }
+  .heading{
+    font-size: 25px;
+  }
+
+  .left-side{
+    margin-left: 0;
+  }
+
+  .left-side h3{
+    font-size: 30px;
+  }
+
+  .left-side p{
+    font-size: 18px;
+  }
+
+  .contact-us-btn{
+    font-size: 14px;
+  }
+
+
+  /* For Our Vision Section  */
+
+  .vision-heading h1::after {
+    width: 130px;
+  }
+
+  .vision-heading{
+    font-size: 25px;
+  }
+
+  .rightside h3{
+    font-size: 30px;
+  }
+
+  .rightside p{
+    font-size: 18px;
+  }
+
+
+  /* For Services We Provide Section  */
+
+  .services-container h1::after{
+    width:210px
+  }
+
+  .services-container h1{
+    font-size: 25px;
+  }
+
+  .service i{
+    font-size: 32px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+  /* For About Us Section  */
+  .heading h1::after{
+    width: 104px;
+    height: 4px;
+  }
+  .heading{
+    font-size: 20px;
+  }
+  .left-side{
+    margin-right: 0;
+  }
+
+  .left-side h3{
+    font-size:23px;
+  }
+
+  .left-side p{
+    font-size:16px;
+  }
+
+  .contact-us-btn{
+    font-size: 12px;
+  }
+
+
+  /* For Our Vision Section  */
+
+  .vision-heading h1::after{
+    width: 104px;
+    height: 4px;
+  }
+
+  .vision-heading{
+    font-size: 20px;
+  }
+
+  .rightside h3{
+    font-size: 23px;
+  }
+
+  .rightside p{
+    font-size: 16px;
+  }
+
+  .rightside {
+    margin-left: 50px;
+  }
+
+
+  /* For Services We Provide Section  */
+
+  .services-container h1::after{
+    height: 4px;
+  }
+
+}
+
+@media only screen and (max-width: 868px) {
+
+  
+  /* For About Us Section  */
+  .heading h1::after{
+    width: 85px;
+  }
+  .heading{
+    font-size: 18px;
+  }
+
+  .about-us-containers{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side{
+    padding: 0 60px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .right-side{
+    width: 90%;
+  }
+
+
+  .left-side p{
+    padding: 0;
+  }
+
+  .contact-us-btn{
+    font-size: 10px;
+  }
+
+
+  /* For Our Vision Section  */
+
+  .vision-heading h1::after{
+    width: 85px;
+  }
+
+
+  .vision-heading{
+    font-size: 18px;
+  }
+
+  .our-vision-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftside {
+    width: 75%;
+  }
+
+
+  /* For Services We Provide Section  */
+
+
+}
+
+
+@media only screen and (max-width: 628px) {
+
+
+  /* For About Us Section  */
+  .heading h1::after{
+    width: 100px;
+    height: 3px;
+  }
+  .left-side{
+    padding: 0;
+  }
+
+
+  /* For Our Vision Section  */
+
+  .vision-heading h1::after{
+    width: 100px;
+    height: 3px;
+  }
+
+  .rightside{
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* For Services We Provide Section  */
+
+  .services-container h1::after{
+    height: 3px;
+  }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+
+  /* For About Us Section  */
+  .heading h1::after{
+    width: 85px;
+    height: 2px;
+  }
+  .heading{
+    font-size: 14px;
+  }
+  .left-side h3{
+    font-size: 17px;
+  }
+
+  .left-side p{
+    font-size: 14px;
+  }
+
+  .contact-us-btn{
+    font-size: 8px;
+  }
+
+
+  /* For Our Vision Section  */
+
+  .vision-heading h1::after{
+    width: 85px;
+    height: 2px;
+  }
+
+
+  .vision-heading{
+    font-size: 14px;
+  }
+
+  .rightside h3{
+    font-size: 17px;
+  }
+
+  .rightside p{
+    font-size: 14px;
+  }
+
+
+  /* Services We Provide Section  */
+
+
+  .services-container h1::after{
+    height: 2px;
+  }
+
+  .services-container{
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .service {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .services-container .row {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .service {
+    padding: 15px;
+  }
+
+}
+
+
+
